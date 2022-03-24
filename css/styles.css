@@ -1,0 +1,124 @@
+:root{
+	--negro: #000000;
+	--rojo: #f33c3c;
+	--blanco: #ffffff;
+	--gris-oscuro: #111111;
+	--gris-claro: #999999;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+
+ul{
+	list-style: none;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: poppins;
+	background-color: var(--negro);
+	background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ff2693' fill-opacity='0.1'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.blog{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 40px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.blog-heading{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.blog-heading span{
+	color: var(--rojo);
+}
+
+.blog-heading h3{
+	font-size: 2.4rem;
+	color: var(--blanco);
+	font-weight: 600;
+}
+
+.blog-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0px;
+	flex-wrap: wrap;
+}
+
+.blog-box{
+	width: 320px;
+	background-color: var(--gris-oscuro);
+	margin: 20px;
+	border-radius: 8px;
+
+}
+
+.blog-img{
+	width: 100%;
+	height: auto;
+}
+
+.blog-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 8px;
+}
+
+.blog-text{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.blog-text .blog-title{
+	font-size: 1.7rem;
+	font-weight: 500;
+	color: var(--rojo);
+	text-align: center;
+}
+
+.blog-text p{
+	color: var(--gris-claro);
+	font-size: 0.9rem;
+	display: -webkit-box;
+	-webkit-line-clamp: 20;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 20px 0px;
+}
+
+.blog-text a{
+	color: var(--rojo);
+	transition: all ease 0.2s;
+}
+
+.blog-text a:hover{
+	color: var(--blanco);
+	transition: all ease 0.2s;
+}
+
+
+
+
+
+
+
